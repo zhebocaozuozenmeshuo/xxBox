@@ -1,0 +1,35 @@
+.tabs-vertical {
+  display: flex;
+  transition: all 1s;
+}
+.tabs-vertical > ol {
+  list-style: none;
+}
+.tabs-vertical > ol.tabs-vertical-bar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.tabs-vertical > ol.tabs-vertical-bar > li {
+  padding: 4px 8px;
+  border: 1px dashed transparent;
+  border-bottom: 0;
+  cursor: pointer;
+}
+.tabs-vertical > ol.tabs-vertical-bar > li:hover {
+  border-color:red;
+}
+.tabs-vertical > ol.tabs-vertical-bar > li.active {
+  border-color:lightblue;
+}
+.tabs-vertical > ol.tabs-vertical-content {
+  flex: 3;
+  border: 1px dashed yellow;
+}
+.tabs-vertical > ol.tabs-vertical-content > li {
+  display: none;
+}
+.tabs-vertical > ol.tabs-vertical-content > li.active {
+  display: block;
+}

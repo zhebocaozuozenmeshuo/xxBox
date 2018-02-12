@@ -1,0 +1,26 @@
+.tabs {}
+.tabs > ol {
+  list-style: none;
+}
+.tabs > ol.tabs-bar {
+  display: flex;
+  border-bottom: 1px dashed red;
+}
+.tabs > ol.tabs-bar > li {
+  padding: 4px 8px;
+  border: 1px dashed transparent;
+  border-bottom: 0;
+  cursor: pointer;
+}
+.tabs > ol.tabs-bar > li:hover {
+  border-color:red;
+}
+.tabs > ol.tabs-bar > li.active {
+  border-color:lightblue;
+}
+.tabs > ol.tabs-content > li {
+  display: none;
+}
+.tabs > ol.tabs-content > li.active {
+  display: block;
+}

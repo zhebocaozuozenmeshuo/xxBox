@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>XX盒子-瓜王</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="./wheels/tabs/tabs.css">
+  <link rel="stylesheet" href="./wheels/tabs-vertical/tabs.css">
+</head>
+
+<body>
+  <a id="id-button-design" class="linkToPage">设计</a>
+  <a id="id-button-indexPage" class="linkToPage">主页</a>
+
+  <div class="pageWrapper guaActive" id="id-page-index">
+    <h1>XX盒子</h1>
+    <div class="tabs xxx">
+      <!-- 页面导航 -->
+      <ol class="tabs-bar">
+        <li>快速存储</li>
+        <li>XX仓库</li>
+      </ol>
+      <!-- 页面 -->
+      <ol class="tabs-content">
+        <li>
+          <div class="codeEditorWrapper">
+            <form action="" id="postCodeSegment">
+              <label for="">
+                填写XX：<textarea rows="11" cols="130" id="id-content"></textarea>
+              </label><br>
+              <input type="submit" value="存储">
+
+            </form>
+          </div>
+        </li>
+        <li>
+          <div class="onlineWrapper" style="display: none;">
+            <p>是的，点下面的按钮可以看之前的代码段</p>
+            <button id='requestCodeSegments'>贫穷使我在这里加了一个按钮</button>
+          </div>
+          <div class="tabs-vertical yyy">
+            <ol class="tabs-vertical-bar">
+              <!-- <li>时间1</li>
+              <li>时间2</li> -->
+            </ol>
+            <ol class="tabs-vertical-content">
+              <!-- <li>代码段1</li>
+              <li>代码段2</li> -->
+            </ol>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+
+  </div>
+
+
+
+
+  <div class="pageWrapper" id="id-page-design">
+    <h2>页面划分</h2>
+    <ul>
+      <li>登录 先不做</li>
+      <li>代码段仓库 --- 做成单页面</li>
+    </ul>
+    <hr>
+    <h2>Todo</h2>
+    <ul>
+      <li>语言区别</li>
+      <li>代码高亮</li>
+    </ul>
+    <hr>
+    <h2>目的</h2>
+    <ul>
+      <li>之前的代码</li>
+      <li>好用的代码</li>
+      <li>常用的代码</li>
+    </ul>
+    <div class="your-element" data-tilt>
+      <h1>不要再留着那些注释啦 随手来记录你的代码 </h1>
+      <pre>
+        <em>先做离线版</em>
+        点击按钮之后读取 localStorage
+      </pre>
+    </div>
+  </div>
+  <script src="./vender/jquery-3.3.1.min.js" charset="utf-8"></script>
+  <script src="./vender/vanilla-tilt/vanilla-tilt.min.js" charset="utf-8"></script>
+  <script src="./vender/markdown/remarkable.min.js" charset="utf-8"></script>
+  <script src="./wheels/utils/gua.js" charset="utf-8"></script>
+  <script src="./wheels/tabs/tabs.js" charset="utf-8"></script>
+  <script src="./wheels/tabs-vertical/tabs.js" charset="utf-8"></script>
+  <!-- 存储服务 -->
+  <script src="//cdn1.lncld.net/static/js/3.6.0/av-min.js"></script>
+  <script src="./js/codeLib.js" charset="utf-8"></script>
+  <script src="main.js" charset="utf-8"></script>
+</body>
+
+</html>

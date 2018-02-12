@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.your-element {
+  height: 400px;
+  width: 400px;
+  border: 1px dashed red;
+}
+.pageWrapper {
+  display: none;
+}
+.guaActive {
+  display: block;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.linkToPage {
+  display: inline-block;
+  width: 47vw;
+  border: 1px dashed;
+}
